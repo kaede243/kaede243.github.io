@@ -1,0 +1,11 @@
+<html>
+<head>
+    <title><%= @document.title %></title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1><%= @document.title %></h1>
+    <%- @content %>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

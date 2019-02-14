@@ -1,0 +1,22 @@
+{
+  "name": "kaede243.github.io",
+  "version": "1.0.0",
+  "description": "Docpad boilerplate with stylus, browser-sync and eco",
+  "dependencies": {
+    "docpad": "~6.82.5",
+    "docpad-plugin-eco": "~2.3.0",
+    "docpad-plugin-livereload": "~2.10.0",
+    "docpad-plugin-stylus": "~2.14.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "start": "npm-run-all --parallel start:*",
+    "start:docpad": "docpad run",
+    "start:browser-sync": "browser-sync start -ws dist",
+    "gen": "docpad generate",
+    "clean": "docpad clean"
+  }
+}
